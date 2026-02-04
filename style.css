@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #121212;
+  color: #eaeaea;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1f1f1f;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  margin-left: 20px;
+  color: #eaeaea;
+  font-weight: bold;
+}
+
+.logo {
+  font-weight: bold;
+  color: #4aa1f3;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  color: #bbbbbb;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.buttons .btn {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.light {
+  background: white;
+  color: black;
+}
+
+.btn.dark {
+  border: 1px solid white;
+  color: white;
+}
+
+/* Section */
+.section {
+  padding: 80px 40px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cards */
+.card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Team */
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Publications */
+.publications li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px;
+  background: #1f1f1f;
+  margin-top: 40px;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+}
